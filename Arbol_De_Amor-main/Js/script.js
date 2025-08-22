@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para Berencita ojitos lindos <3:\n\nLa vida es un regalo pero tambien nos atrapa en un ciclo que aveces no comprendemos\n\ny al intentar entenderlo no es simplemente algo distintivo de cada persona.\n\nDonde los sentimientos y las exporesiones se vuelven muy grandes para que lo dicten las palabras...`;  } else {
+    text = `Para Berencita ojitos lindos:\n\nLa vida es un regalo pero tambien nos atrapa en un ciclo que aveces no comprendemos y al intentar entenderlo no es simplemente algo distintivo de cada persona donde los sentimientos y las exporesiones se vuelven muy grandes para que lo dictan las palabras...`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con mucho cariño, tu programador favorito Josephcito";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con mucho amor, Josephcito<3";
   signature.classList.add('visible');
 }
 
