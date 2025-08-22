@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para Berencita ojitos lindos:\n\nLa vida es un regalo pero tambien nos atrapa en un ciclo que aveces no comprendemos y al intentar entenderlo no es simplemente algo distintivo de cada persona donde los sentimientos y las exporesiones se vuelven muy grandes para que lo dictan las palabras...`;  } else {
+    text = `Para Berencita ojitos lindos:\n\n"La vida es un regalo, aunque a veces nos envuelve en un ciclo que no siempre comprendemos. Y en el intento de descifrarlo, los pensamientos se vuelven un torbellino y los sentimientos demasiado grandes para caber en las palabras… como si la existencia misma escondiera un secreto que merece ser descubierto en alguien."`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
